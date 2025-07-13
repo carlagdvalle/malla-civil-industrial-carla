@@ -1,0 +1,72 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #b03b77;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    margin: 30px 0 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.semestre {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.ramo {
+    display: block;
+    background-color: #f7c7d8;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    margin: 6px auto;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+.ramo:hover {
+    transform: scale(1.04);
+}
+
+.bloqueado {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.estrellita {
+    position: absolute;
+    font-size: 16px;
+    color: gold;
+    animation: sparkle 1s ease-out forwards;
+    top: -8px;
+    right: -8px;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
