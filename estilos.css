@@ -1,7 +1,8 @@
 
+
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -13,30 +14,35 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2 {
-    color: #333;
-    margin: 30px 0 10px 0;
-}
-
 .container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 10px;
 }
 
 .semestre {
-    background-color: #f8f8f8;
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
     padding: 10px;
-    width: 180px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    width: 200px;
+    min-width: 180px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
 }
 
 .ramo {
     display: block;
-    background-color: #f7c7d8;
+    background-color: #fce4ec; /* rosado claro */
     color: #222;
     border: none;
     border-radius: 8px;
@@ -44,17 +50,19 @@ h2 {
     padding: 10px 12px;
     font-size: 14px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     width: 100%;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .ramo:hover {
     transform: scale(1.04);
 }
 
-.bloqueado {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.ramo.tachado {
+    background-color: #ec407a; /* rosado mÃ¡s fuerte al aprobar */
+    text-decoration: line-through;
+    color: #eee;
 }
 
 .estrellita {
@@ -65,7 +73,6 @@ h2 {
     top: -8px;
     right: -8px;
 }
-
 @keyframes sparkle {
     0% { transform: scale(1); opacity: 1; }
     100% { transform: scale(2); opacity: 0; }
