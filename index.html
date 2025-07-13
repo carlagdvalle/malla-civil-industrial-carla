@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Interactiva - Ingeniería Civil Industrial UNAB</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Malla Interactiva - Ingeniería Civil Industrial UNAB</h1>
+    <div class="container">
+<div class="semestre"><h2>Semestre I</h2>
+<button class="ramo" id="fisica_general" data-desbloquea="fisica_exp;calculo_diff;quimica">Física General</button>
+<button class="ramo" id="intro_mate" data-desbloquea="fisica_exp;calculo_diff;quimica">Introducción a las Matemáticas</button>
+<button class="ramo" id="intro_prog" data-desbloquea="compliance;base_datos">Introducción a la Programación</button>
+<button class="ramo" id="intro_ing" data-desbloquea="compliance;base_datos">Introducción a la Ingeniería</button>
+<button class="ramo" id="hab_com" data-desbloquea="ingles1">Habilidades Comunicativas</button>
+</div>
+<div class="semestre"><h2>Semestre II</h2>
+<button class="ramo" id="fisica_exp" data-desbloquea="mecanica;calculo_integral">Física Experimental</button>
+<button class="ramo" id="calculo_diff" data-desbloquea="mecanica;calculo_integral">Cálculo Diferencial</button>
+<button class="ramo" id="quimica" data-desbloquea="mecanica;calculo_integral">Química y Ambiente</button>
+<button class="ramo" id="taller_innova1">Taller de Innovación I</button>
+<button class="ramo" id="ingles1" data-desbloquea="ingles2">Inglés I</button>
+</div>
+<div class="semestre"><h2>Semestre III</h2>
+<button class="ramo" id="mecanica" data-desbloquea="electro;ecuaciones">Mecánica</button>
+<button class="ramo" id="calculo_integral" data-desbloquea="electro;ecuaciones">Cálculo Integral</button>
+<button class="ramo" id="compliance">Compliance & Accountability</button>
+<button class="ramo" id="proc_industriales">Procesos Industriales</button>
+<button class="ramo" id="taller_innova2">Taller de Innovación II</button>
+<button class="ramo" id="ingles2" data-desbloquea="ingles3">Inglés II</button>
+</div>
+<div class="semestre"><h2>Semestre IV</h2>
+<button class="ramo" id="electro">Electricidad y Magnetismo</button>
+<button class="ramo" id="ecuaciones">Ecuaciones Diferenciales</button>
+<button class="ramo" id="invest_op" data-desbloquea="redes_estoc">Investigación de Operaciones</button>
+<button class="ramo" id="practica1" data-desbloquea="seminario;proyecto">Práctica I</button>
+</div>
+<div class="semestre"><h2>Semestre V</h2>
+<button class="ramo" id="metodos_cuant">Métodos Cuantitativos</button>
+<button class="ramo" id="economia" data-desbloquea="redes_estoc">Economía</button>
+<button class="ramo" id="eco_circular" data-desbloquea="redes_estoc">Economía Circular</button>
+<button class="ramo" id="ingles3" data-desbloquea="ingles4;resp_social">Inglés III</button>
+</div>
+<div class="semestre"><h2>Semestre VI</h2>
+<button class="ramo" id="mineria_datos">Minería de Datos</button>
+<button class="ramo" id="taller_innova3" data-desbloquea="ing_eco">Taller de Innovación III</button>
+<button class="ramo" id="costos" data-desbloquea="ing_eco">Costos y Presupuestos</button>
+<button class="ramo" id="redes_estoc" data-desbloquea="incertidumbre;toma_cadena">Redes y Sistemas Estocásticos</button>
+<button class="ramo" id="gestion_cadena">Gestión de la Cadena de Suministro</button>
+</div>
+<div class="semestre"><h2>Semestre VII</h2>
+<button class="ramo" id="gestion_digital">Gestión Transformación Digital</button>
+<button class="ramo" id="ing_eco" data-desbloquea="eval_proy">Ingeniería Económica</button>
+<button class="ramo" id="incertidumbre" data-desbloquea="finanzas;int_negocios;marketing;gestion_estrategica;topicos1;portafolio">Toma Decisiones Incertidumbre</button>
+<button class="ramo" id="ingles4">Inglés IV</button>
+</div>
+<div class="semestre"><h2>Semestre VIII</h2>
+<button class="ramo" id="eval_proy">Evaluación de Proyectos</button>
+<button class="ramo" id="simulacion">Simulación de Sistemas</button>
+<button class="ramo" id="estrategia">Estrategia y Sustentabilidad</button>
+<button class="ramo" id="analitica">Analítica</button>
+<button class="ramo" id="seminario">Seminario de Licenciatura</button>
+<button class="ramo" id="practica2">Práctica II</button>
+</div>
+<div class="semestre"><h2>Semestre IX</h2>
+<button class="ramo" id="finanzas" data-desbloquea="topicos2;topicos3">Finanzas Corporativas</button>
+<button class="ramo" id="int_negocios" data-desbloquea="topicos2;topicos3">Inteligencia de Negocios</button>
+<button class="ramo" id="marketing" data-desbloquea="topicos2;topicos3">Marketing</button>
+<button class="ramo" id="gestion_estrategica" data-desbloquea="topicos2;topicos3">Gestión Estratégica</button>
+<button class="ramo" id="topicos1" data-desbloquea="topicos2;topicos3">Tópicos Especialidad I</button>
+<button class="ramo" id="portafolio" data-desbloquea="topicos2;topicos3">Portafolio Proyectos</button>
+</div>
+<div class="semestre"><h2>Semestre X</h2>
+<button class="ramo" id="topicos2">Tópicos Especialidad II</button>
+<button class="ramo" id="topicos3">Tópicos Especialidad III</button>
+<button class="ramo" id="proyecto">Proyecto de Título</button>
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
